@@ -15,7 +15,6 @@ $(document).ready(function () {
     let endDateStr = queries["endDate"];
     console.log(endDateStr);
 
-    // by default end date set last day of current year
     let endDate = new Date();
     if (isNaN(Date.parse(endDateStr))) {
         endDate = new Date(new Date().getFullYear(), 11, 31)
